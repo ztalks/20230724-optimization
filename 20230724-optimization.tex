@@ -29,6 +29,7 @@
 \usepackage{booktabs}
 \usepackage{algorithm2e}
 \usepackage{algorithmic}
+\usepackage{bbding}
 
 \usepackage{lipsum}
 \newcommand\blfootnote[1]{%
@@ -184,7 +185,7 @@
 %==============================================================
 
 \hypersetup{
-  pdftitle={PDFO},%
+  pdftitle={PRIMA},%
   pdfauthor={ZHANG Zaikun},
 }
 
@@ -203,7 +204,7 @@
   {\href{https://www.zhangzk.net}{Zaikun Zhang}}
   \\[2ex]{\small The Hong Kong Polytechnic University}\\[3ex]
     {
-        SIOPT 2023, Seattle
+        Optimization 2023, Aveiro, Portugal
         %\\[3ex]
         \\[9ex]
         %Dedicated to the late Professor \textbf{M. J. D. Powell} FRS (1936--2015)
@@ -332,7 +333,7 @@
     \only<3>{\includegraphics[width=0.2\textwidth]{tr02.png}}
     \only<4>{\includegraphics[width=0.2\textwidth]{tr03.png}}
     \only<5>{\includegraphics[width=0.2\textwidth]{tr04.png}}
-    \only<6>{\includegraphics[width=0.2\textwidth]{tr05.png}}
+    %\only<6>{\includegraphics[width=0.2\textwidth]{tr05.png}}
 \end{figure}
       %Objective function: $f(x,y) \;=\; -10x^2+10y^2+4\sin(xy) - 2x+x^4$
     %\vspace{-0.2ex}
@@ -385,29 +386,35 @@
 \begin{frame}
   \frametitle{Powell's trust-region DFO algorithms and software}
 
-      \vspace{1ex}
       \begin{itemize}
           \item  COBY\red{L}A: solving general nonlinearly constrained problems using \red{linear} models; code released in 1992; paper published in 1994
-      \vspace{1ex}
+      \vspace{0.5ex}
 
     \item  UOBYQA: solving unconstrained problems using quadratic models; code released in 2000; paper published in 2002
-      \vspace{1ex}
+      \vspace{0.5ex}
 
     \item  NEWUOA: solving unconstrained problems using quadratic models; code released in 2004; paper published in 2006
-      \vspace{1ex}
+      \vspace{0.5ex}
 
     \item  BOBYQA:
        solving bound-constrained problems using
        quadratic models; code released and paper written in 2009
 
-      \vspace{1ex}
+      \vspace{0.5ex}
      \item  LINCOA:
        solving linearly constrained problems using
        quadratic models; code released in 2013 but no paper written
 
-       \vspace{1ex}
-       \pause
-       \item What about \red{COBYQA}? %--- That's \blue{Tom Ragonneau}'s talk.
+       \vspace{0.5ex}
+   \item[\blue{\HandRight}]
+       \small{
+           \mbox{\red{COBYQA} is the \red{successor of COBYLA} using quadratic models. Visit:}
+           \\[0.8ex]
+    \begin{center}
+    \qrcode[height=0.1\textwidth]{https://www.cobyqa.com}
+    \\[0.8ex]\href{http://www.cobyqa.com}{\blue{\texttt{cobyqa.com}}}
+    \end{center}
+}
   \end{itemize}
 \end{frame}
 
@@ -491,15 +498,15 @@
 
             \vspace{2ex}
     \begin{itemize}
-        \item Professor Powell, April 2015: ``It would be a relief to me if you would kindly continue
-            to look after my optimisation software (NEWUOA, BOBYQA and LINCOA). Also I would like
+        \item Professor Powell, April 2015: ``\blue{It would be a relief to me if you would kindly continue
+            to look after my optimisation} software (NEWUOA, BOBYQA and LINCOA). Also I would like
             you to add COBYLA and TOLMIN if you do not have them already.''
             \vspace{1ex}
         \item Stefan Wild, ICCOPT 2016, Tokyo: People do not want interfaces. They want
-            implementations that they can understand and play with.
+            implementations that they can \blue{understand and play with}.
             \vspace{1ex}
-        \item Jeff Larson, ISMP 2018, Bordeaux: Numerical linear algebra people have standard
-            implementations for standard algorithms, e.g., LAPACK, whereas we all work on our own
+        \item Jeff Larson, ISMP 2018, Bordeaux: Numerical linear algebra people have \blue{standard
+            implementations for standard algorithms}, e.g., LAPACK, whereas we all work on our own
             implementation of interpolation, model improvement, ...
     \end{itemize}
 \end{frame}
@@ -1010,7 +1017,7 @@
   %\vspace{1ex}
 
     \begin{center}
-      { \Large{\textcolor{blue}{Thank you!}}}
+      { \Large{\textcolor{blue}{Muito obrigado!}}}
 %      \\[1ex]\url{zaikun.zhang@polyu.edu.hk}
     \end{center}
 
