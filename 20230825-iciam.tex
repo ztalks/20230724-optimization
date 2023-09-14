@@ -204,7 +204,7 @@
   {\href{https://www.zhangzk.net}{Zaikun Zhang}}
   \\[2ex]{\small The Hong Kong Polytechnic University}\\[3ex]
     {
-        Optimization 2023, Aveiro, Portugal
+        ICIAM 2023, Tokyo, Japan
         %\\[3ex]
         \\[9ex]
         %Dedicated to the late Professor \textbf{M. J. D. Powell} FRS (1936--2015)
@@ -236,17 +236,25 @@
 \begin{frame}
     \frametitle{What is this talk about?}
 
-    \vspace{10ex}
+    \vspace{6ex}
+    \begin{center}
+        Derivative-Free Optimization (DFO): \\[1ex]
+
+    Optimization without using derivatives
+    \end{center}
+
+    \vspace{2ex}
+
     Topics of this talk:
     \vspace{2ex}
     \begin{enumerate}
-        \item A new DFO solver named PRIMA
+        \item A new DFO solver named \blue{PRIMA}
             \vspace{2ex}
-        \item The mathematics behind it
+        \item The \blue{mathematics} behind it
     \end{enumerate}
 
     \vspace{2ex}
-    Let us start with some tests of PRIMA based on the CUTEst problems.
+    Let us start with some tests of PRIMA based on the \blue{CUTEst problems}.
 \end{frame}
 
 
@@ -379,7 +387,7 @@
     %\vspace{1ex}
 \item Normally, $\mathcal{X}_{k+1} = \left(\mathcal{X}_{k}\cup\{x_{k+1}\}\right) \setminus\{\text{a ``bad'' point}\}$.
     \vspace{1ex}
-\item Take \blue{geometry-improving steps} if the geometry of $\mathcal{X}_k$ deteriorates.
+\item Take \blue{geometry-improving steps} if the \red{geometry of $\mathcal{X}_k$ deteriorates}.
     \end{itemize}
 \end{frame}
 
@@ -405,16 +413,16 @@
        solving linearly constrained problems using
        quadratic models; code released in 2013 but no paper written
 
-       \vspace{0.5ex}
-   \item[\blue{\HandRight}]
-       \small{
-           \mbox{\red{COBYQA} is the \red{successor of COBYLA} using quadratic models. Visit:}
-           \\[0.8ex]
-    \begin{center}
-    \qrcode[height=0.1\textwidth]{https://www.cobyqa.com}
-    \\[0.8ex]\href{http://www.cobyqa.com}{\blue{\texttt{cobyqa.com}}}
-    \end{center}
-}
+       %\vspace{0.5ex}
+   %\item[\blue{\HandRight}]
+       %\small{
+       %    \mbox{\red{COBYQA} is the \red{successor of COBYLA} using quadratic models. Visit:}
+       %    \\[0.8ex]
+    %\begin{center}
+    %\qrcode[height=0.1\textwidth]{https://www.cobyqa.com}
+    %\\[0.8ex]\href{http://www.cobyqa.com}{\blue{\texttt{cobyqa.com}}}
+    %\end{center}
+%}
   \end{itemize}
 \end{frame}
 
@@ -512,6 +520,17 @@
 \end{frame}
 
 \begin{frame}
+    \frametitle{An inspiration}
+
+    \begin{center}
+        \includegraphics[width=0.4\textwidth]{linalg.jpg}
+    \end{center}
+
+\end{frame}
+
+
+
+\begin{frame}
     \frametitle{Isn't it a perfect project for an engineer or a student?}
 
     \begin{itemize}
@@ -584,16 +603,6 @@
     \end{center}
     \blue{``P'' for Powell}.
 \end{frame}
-
-\begin{frame}
-    \frametitle{An inspiration}
-
-    \begin{center}
-        \includegraphics[width=0.4\textwidth]{linalg.jpg}
-    \end{center}
-
-\end{frame}
-
 
 
 \begin{frame}
@@ -799,10 +808,11 @@
     \end{center}
 
     \begin{itemize}
-        \item In TOUGH tests, objective functions are corrupted as above and then fed to the solvers.
+        \item In \red{TOUGH} tests, objective functions are corrupted as above with~\red{\texttt{NaN},
+            \texttt{Inf}, evaluated failures}, ..., and then fed to the solvers.
             \vspace{0.5ex}
-        \item We make sure that PRIMA solvers work properly even if the objective functions are
-            corrupted in this severe way. (\blue{What about your solvers?})
+        \item PRIMA works \blue{properly} even if the objective functions are
+            corrupted in this \red{severe} way. (\blue{What about your solvers?})
     \end{itemize}
 \end{frame}
 
@@ -960,10 +970,13 @@
     \vspace{1ex}
 \item \red{Sometimes we do things that are not enjoyable but have to be done.}
 
-    \vspace{1ex}
-\item Teaser: \blue{Who translated Euclid's \textit{Elements}} to modern
-    languages? \blue{You probably do not know (and do not care).}
     \end{itemize}
+    \begin{mybox}
+\blue{- Who translated Euclid's \textit{Elements}} to modern
+    languages?\\
+    - \blue{You probably do not know (and do not care).}\\
+    \phantom{-} \red{But we cannot live in a world without such a translation.}
+    \end{mybox}
 
 \end{frame}
 
@@ -1017,7 +1030,7 @@
   %\vspace{1ex}
 
     \begin{center}
-      { \Large{\textcolor{blue}{Muito obrigado!}}}
+      { \Large{\textcolor{blue}{Thank you!}}}
 %      \\[1ex]\url{zaikun.zhang@polyu.edu.hk}
     \end{center}
 
